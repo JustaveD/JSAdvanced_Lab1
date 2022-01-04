@@ -33,6 +33,10 @@ body {
     text-align: center;
 }
 
+.form-container {
+    position: relative;
+}
+
 .form-container .field-container:first-of-type {
     grid-area: name;
 }
@@ -303,4 +307,37 @@ input {
     backface-visibility: hidden;
     -webkit-font-smoothing: antialiased;
     color: #47525d;
+}
+
+#pay-btn {
+    display: inline-block;
+    width: 200px;
+    background-color: #0288D1;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+    transition: all .3s ease;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#pay-btn:hover {
+    color: #0288D1;
+    background-color: #fff;
+    border: 1px solid #0288D1;
+}
+
+#pay-btn.disable {
+    pointer-events: none;
+    background-color: #333;
+}
+
+.message {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-style: italic;
+    color: #3dce44;
+    font-size: 18px;
+    font-weight: bold;
 }

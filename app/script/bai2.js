@@ -21,6 +21,16 @@ cardnumber.addEventListener('keyup', (e) => {
     outputNumber.innerHTML = cardnumber.value;
 })
 
+const payBtn = document.querySelector("#pay-btn");
+const formContainer = document.querySelector(".form-container");
+payBtn.addEventListener("click", function () {
+    const message = document.createElement("div");
+    message.classList.add("message");
+    message.innerText = "Đã thanh toán thành công!";
+    formContainer.appendChild(message);
+    payBtn.classList.add("disable");
+})
+
 
 
 
