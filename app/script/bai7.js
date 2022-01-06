@@ -21,6 +21,7 @@ window.onload = function () {
 }
 
 window.addEventListener('focus', function () {
+    clearInterval(counter);
     console.log('focus');
     counter = setInterval(timer, 1000);
     function timer() {
@@ -35,8 +36,6 @@ window.addEventListener('focus', function () {
     }
 
 })
-
-
 
 
 window.addEventListener('blur', function () {
